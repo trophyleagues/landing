@@ -9,8 +9,9 @@ body {
     color: $white;
     .header__container {
         display: flex;
-        justify-content: space-around;
-        width: 100%;
+        justify-content: space-between;
+        width: 97% !important;
+        margin-left: 5%;
         .header__languaje {
             display: flex;
             padding: 10px;
@@ -32,7 +33,7 @@ body {
     }
     .landing__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
         min-height: 100vh;
         .signup__container {
@@ -80,16 +81,16 @@ body {
             }
         }
         .presentation__container {
-            width: 43%;
+            width: 50%;
             height: 100% !important;
             .header__container {
-                width: 100%;
+                width: 90%;
                 height: 50px;
             }
             .infobox__container {
                 background: $black-transparent;
                 padding: 20px;
-                width: 100%;
+                width: 90%;
                 margin: 0 5%;
                 text-align: center;
                 .infobox__title {

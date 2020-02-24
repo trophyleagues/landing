@@ -1,0 +1,35 @@
+<?php
+
+define("TITLE_INDEX", "TrophyLeagues - Soccer manager online");
+define("DESCRIPTION_INDEX", "Lead a team, train players, manage the economy, play games and much more in TrophyLeagues.");
+define("KEYWORDS_INDEX", "TrophyLeagues, trophy, soccer manager, TL manager, soccer game");
+define("MENU_ABOUT", "¿What is TL?");
+define("MENU_NEWS", "Newsletter");
+define("MENU_COOP", "Collaborate");
+define("MENU_FORUM", "Forum");
+define("TITLE_REGISTER", "Register to Beta");
+define("NAME", "Name");
+define("EMAIL", "Email");
+define("COUNTRY", "Country");
+define("SEND", "Send");
+define("TITLE_ABOUT", "¿What is <br />Trophy Leagues?");
+define("ABOUT_DESCRIPTION", "The game combines the functions of technical direction of the team, training, economic management of the club, stadiums, aesthetics, leagues and a passionate community about soccer. <br/> Trophy Manager is a massive free browser game in which players manage their own soccer club.");
+define("ABOUT_ACTION", "Cannot wait another second to play it? Subscribe to the <a href='#form' class='tl-red'> beta version </a>.");
+define("TITLE_NEWS", "Game News");
+define("NEWS_DESCRIPTION", "We will inform you of all the game news, advances, trial and release versions.");
+define("SUBSCRIBE", "Subscribe!");
+define("PROMO_PLAY", "Play with your friends. <br /> Challenge them to prove who is the best.");
+define("PROMO_RACE", "Compete with thousands of players <br /> from around the world.");
+define("PROMO_GROW", "Make your club grow, <br /> become the best player <br /> and win prizes.");
+define("PROMO_PLAY_2", "Play with your friends. <br /> Challenge them to show <br /> who is the best.");
+define("PROMO_GROW_2", "Make your club grow, <br /> become the best player <br /> and win prizes.");
+define("TITLE_FORUM", "Game forum");
+define("FORUM_DESCRIPTION", "What do you expect from Trophy Manager? Are you already playing and expected something more? What would you like us to change? <br /> Your opinion matters to us. Leave your comments in our forum");
+define("FORUM_JOIN", "Join the forum");
+define("FORM_CONFIRM", "Perfect! You are subscribed.");
+define("FORM_TERMS", 'I accept <a href="http://trophyleagues.com/es/terminos-y-condiciones" target="_blank" class="terms-label">legal terms and conditions</a>');
+define("MAILING_TEXT", "Enter your email");
+define("COOKIES_TEXT", 'We use technical and analytics cookies to ensure that we give you the best experience on our website.');
+define("COOKIES_OK", 'Accept & Close');
+define("COOKIES_INFO", 'More Info');
+define("", "");

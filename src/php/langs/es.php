@@ -1,0 +1,35 @@
+<?php
+
+define("TITLE_INDEX", "TrophyLeagues - Manager online de fútbol");
+define("DESCRIPTION_INDEX", "Dirige un equipo, entrena los jugadores, gestiona la economía, juega partidos y mucho más en TrophyLeagues.");
+define("KEYWORDS_INDEX", "TrophyLeagues, trophy, manager futbol, TL manager, juego futbol");
+define("MENU_ABOUT", "¿Qué es TL?");
+define("MENU_NEWS", "Newsletter");
+define("MENU_COOP", "Colaborar");
+define("MENU_FORUM", "Foros");
+define("TITLE_REGISTER", "Apúntate a la versión Beta");
+define("NAME", "Nombre");
+define("EMAIL", "Dirección de email");
+define("COUNTRY", "País");
+define("SEND", "Enviar");
+define("TITLE_ABOUT", "¿Que es <br />Trophy Leagues?");
+define("ABOUT_DESCRIPTION", "El juego combina las funciones de dirección técnica del equipo, entranamientos, gestión económica del club, estadios, estética, ligas y una comunidad de apasionados por el futbol. <br/> Trophy Manager es un juego masivo y gratuito por navegador en el que los jugadores administran su propio club de futbol.");
+define("ABOUT_ACTION", "¿No puedes esperar ni un segundo más para jugarlo? Apuntate a la <a href='#form' class='tl-red'>versión beta</a>.");
+define("TITLE_NEWS", "Novedades del juego");
+define("NEWS_DESCRIPTION", "Te informaremos de todas las novedades del juego, avances, versiones de prueba y lanzamiento.");
+define("SUBSCRIBE", "Suscribirme!");
+define("PROMO_PLAY", "Juega con tus amigos.<br />Desafíalos para demostrar quién es el mejor.");
+define("PROMO_RACE", "Compite con miles de jugadores<br /> de todo el mundo.");
+define("PROMO_GROW", "Haz que tu club cresca, <br />conviertete en el mejor jugador<br /> y gana premios.");
+define("PROMO_PLAY_2", "Juega con tus amigos.<br />Desafíalos para demostrar<br /> quién es el mejor.");
+define("PROMO_GROW_2", "Haz que tu club cresca, <br />conviertete en el mejor jugador<br /> y gana premios.");
+define("TITLE_FORUM", "Foro del juego");
+define("FORUM_DESCRIPTION", "¿Qué esperas de Trophy Manager? ¿Ya estás jugando y esperabas algo más? ¿Qué te gustaría que cambiemos? <br />Tu opinión nos importa. Deja tus comentarios en nuestro foro");
+define("FORUM_JOIN", "Ingresar al foro");
+define("FORM_CONFIRM", "Perfecto! Ya estás suscrito.");
+define("FORM_TERMS", 'Acepto los <a href="http://trophyleagues.com/es/terminos-y-condiciones" target="_blank" class="terms-label">términos y condiciones</a> de uso');
+define("MAILING_TEXT", "Ingresa tu email");
+define("COOKIES_TEXT", 'Utilizamos cookies técnicas y analíticas para asegurarnos de brindarle la mejor experiencia en nuestro sitio web.');
+define("COOKIES_OK", 'Aceptar y cerrar');
+define("COOKIES_INFO", 'Más información');
+define("", "");

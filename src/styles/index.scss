@@ -105,12 +105,9 @@ body {
                     text-transform: uppercase;
                 }
                 .infobox__saleContainer {
-                    display: flex;
-                    justify-content: left;
                     margin-left: 15%;
                     .infobox__saleTitle {
                         text-transform: uppercase;
-                        line-height: 9rem;
                         .infobox__saleTitle--first {
                             font-size: 2rem;
                             color: $white;
@@ -120,10 +117,10 @@ body {
                         }
                     }
                     .infobox__saleSubtitle {
-                        position: absolute;
-                        margin-bottom: 5px;
                         font-size: 1.25rem;
                         font-weight: lighter;
+                        text-align: left;
+                        margin-left: 13%;
                     }
                 }
                 .infobox__container {

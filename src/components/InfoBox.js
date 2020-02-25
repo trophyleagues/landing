@@ -68,7 +68,7 @@ const InfoBox = () => {
           <span className="infobox__saleTitle--second">Starter</span> */}
         </div>
       </div>
-      <div className="infobox__container">
+      <div className="infobox__screensContainer">
         {images.map((img, index) => {
           return <img src={img} key={index} className="infobox__screen" alt="Captura del juego" onClick={() => openLightbox(index)} />
         })}

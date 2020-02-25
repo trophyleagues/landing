@@ -6,13 +6,13 @@ import CookieConsent from "react-cookie-consent";
 import {HomeLang} from '../langs/langs';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 import screen0 from '../assets/screens/home.jpg';
-import screen1 from '../assets/screens/alineacion.jpg';
-import screen3 from '../assets/screens/clasificacion.jpg';
-import screen4 from '../assets/screens/economia.jpg';
-import screen5 from '../assets/screens/infraestructuras.jpg';
+import screen1 from '../assets/screens/economia.jpg';
+import screen2 from '../assets/screens/infraestructuras.jpg';
+import screen3 from '../assets/screens/training_individual.jpg';
+import screen4 from '../assets/screens/alineacion.jpg';
+import screen5 from '../assets/screens/clasificacion.jpg';
 import screen6 from '../assets/screens/mercado.jpg';
 import screen7 from '../assets/screens/scouting.jpg';
-import screen8 from '../assets/screens/training_individual.jpg';
 import kickstarter from '../assets/kikcstarter.png';
 
 const InfoBox = () => {
@@ -22,7 +22,7 @@ const InfoBox = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [Home, setHomeLang] = useState(HomeLang);
   const images = [
-    screen0, screen1, screen3, screen4, screen5, screen6, screen7, screen8
+    screen0, screen1, screen2, screen3, screen4, screen5, screen6, screen7
   ];
   
   function openLightbox(index) {

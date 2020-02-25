@@ -23,11 +23,13 @@ body {
         .header__nav {
             display: flex;
             padding: 10px;
+            cursor: pointer;
             button {
                 background: $button-primary;
                 color: $white;
                 border: none;
                 margin-left: 10px;
+                cursor: pointer;
             }
         }
     }
@@ -52,6 +54,9 @@ body {
                     color: $white;
                     opacity: 0.7;
                 }
+            }
+            a {
+                color: $white !important;
             }
             input[type=checkbox] {
                 width: 15px;
@@ -105,7 +110,7 @@ body {
                     text-transform: uppercase;
                 }
                 .infobox__saleContainer {
-                    margin-left: 15%;
+                    margin-left: 10%;
                     .infobox__saleTitle {
                         text-transform: uppercase;
                         .infobox__saleTitle--first {
@@ -117,19 +122,22 @@ body {
                         }
                     }
                     .infobox__saleSubtitle {
+                        font-family: Helvetica, sans-serif;
                         font-size: 1.25rem;
                         font-weight: lighter;
                         text-align: left;
-                        margin-left: 13%;
+                        margin-left: 10%;
                     }
                 }
                 .infobox__container {
+                    margin-top: 10px;
                     display: flex;
                     flex-wrap: wrap;
                     width: 85%;
                     .infobox__screen {
-                        max-width: 45%;
+                        max-width: 28%;
                         margin: 2%;
+                        cursor: pointer;
                     }
                 }
             }

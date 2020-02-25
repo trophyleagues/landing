@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useSelector} from 'react-redux';
 import Lightbox from 'react-image-lightbox';
 import {useForceUpdate} from '../Hooks/useForceUpdate';
+import CookieConsent from "react-cookie-consent";
 import {HomeLang} from '../langs/langs';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 import screen0 from '../assets/screens/home.jpg';
@@ -36,6 +37,16 @@ const InfoBox = () => {
   
   return(
     <div className="infobox__container">
+      <CookieConsent
+          location="bottom"
+          buttonText={Home.cookieConfirm}
+          cookieName="TrophyCookies"
+          style={{ background: "rgba(0, 188, 215, 0.77)" }}
+          buttonStyle={{ background: "#fff", fontSize: "13px" }}
+          expires={150}
+      >
+          {Home.cookies}
+      </CookieConsent>
       {lightboxOpen && <Lightbox mainSrc={images[photoIndex]}
             nextSrc={images[(photoIndex + 1) % images.length]}
             prevSrc={images[(photoIndex + images.length - 1) % images.length]}

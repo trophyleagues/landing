@@ -1,0 +1,19 @@
+@import './vars.scss';
+.notfound__container {
+    width: 80%;
+    margin: 5%;
+    background-color: $black-transparent;
+    text-align: center;
+    padding: 50px;
+    font-size: 2rem;
+    button {
+        margin-top: 20px;
+        background: $button-primary;
+        color: $white;
+        border: none;
+        margin-left: 10px;
+        cursor: pointer;
+        min-height: 50px;
+        min-width: 100px;
+    }
+}

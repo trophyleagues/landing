@@ -1,9 +1,10 @@
 import React from 'react';
-
-const NotFound = () => {
+import '../styles/notfound.scss'
+const NotFound = (props) => {
   return(
-    <div>
-      No se encontró esta página
+    <div className="notfound__container">
+      No se encontró esta página<br />
+      <button onClick={() => props.history.push("/")}>Ir al inicio</button>
     </div>
   )
 }

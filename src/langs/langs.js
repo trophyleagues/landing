@@ -16,24 +16,33 @@ export const HeaderLang = new LocalizedStrings({
 export const HomeLang = new LocalizedStrings({
           en: {
             info: "The game combines the functions of technical direction of the team, training, economic management of the club, stadiums, aesthetics, leagues and a passionate community about soccer. Trophy Manager is a massive free browser game in which players manage their own soccer club",
-            callToAction: "Be the first with"
-
+            callToAction: "Be the first with",
+            cookies: "This website uses cookies to enhance the user experience.",
+            cookieConfirm: "Sure!"
           },
           es: {
             info: "El juego combina las funciones de dirección técnica del equipo, entranamientos, gestión económica del club, estadios, estética, ligas y una comunidad de apasionados por el futbol. Trophy Manager es un juego masivo y gratuito por navegador en el que los jugadores administran su propio club de futbol.",
-            callToAction: "Se el primero en jugar"
+            callToAction: "Se el primero en jugar",
+            cookies: "Este sitio usa cookies para mejorar la experiencia de usuario.",
+            cookieConfirm: "Comprendido!"
           },
           cat: {
             info: "El joc combina les funcions de direcció tècnica de l'equip, entrenaments, gestió econòmica del club, estadi, estètica, lligues i una comunitat d'apassionats pel fútbol. Trophy Leagues és un joc massiu i gratuït per navegador en què els jugadors administren el seu propi club de fútbol.",
-            callToAction: 'Sea el primero en jogar'
+            callToAction: 'Sea el primero en jogar',
+            cookies: "Aquest web utilitza cookies per millorar l'experiència de l'usuari",
+            cookieConfirm: "D'acord!"
           },
           pt: {
             info: "O jogo combina as funções de direção técnica da equipe, treinamento, gestão econômica do clube, estádios, estética, ligas e uma comunidade apaixonada pelo futebol. Trophy Manager é um enorme jogo de navegador gratuito no qual os jogadores gerenciam seu próprio clube de futebol",
-            callToAction: 'Seja o primeiro a jogar'
+            callToAction: 'Seja o primeiro a jogar',
+            cookies: "Este site usa cookies para melhorar a experiência do usuário.",
+            cookieConfirm: "Perfeito"
           },
           it: {
             info: "Il gioco combina le funzioni di direzione tecnica della squadra, formazione, gestione economica del club, stadi, estetica, leghe e una comunità di appassionati di calcio. Trophy Leagues è un enorme gioco browser gratuito in cui i giocatori gestiscono la propria squadra di calcio.",
-            callToAction: 'sii il primo a giocare'
+            callToAction: 'sii il primo a giocare',
+            cookies: "Questo sito web utilizza cookies per migliorare l'esperienza dell'utente.",
+            cookieConfirm: "Perfetto!"
           }
         })
 
@@ -45,7 +54,7 @@ export const FormLang = new LocalizedStrings({
     password: "PASSWORD",
     logIn: "I already have and account, log in",
     submit: "Pre registration",
-    terms: "I accept the general conditions of use"
+    terms: "I accept the general conditions of use",
   },
   es: {
     name: "NOMBRE",
@@ -64,7 +73,7 @@ export const FormLang = new LocalizedStrings({
     logIn: "Ja tinc i compte, inicieu la sessió",
     submit: "Enviar",
     terms: "Accepto els terminis i condicions d'ús"
-  },
+    },
   pt: {
     name: "NOME",
     email: "O EMAIL",

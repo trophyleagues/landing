@@ -52,7 +52,7 @@ export const FormLang = new LocalizedStrings({
     email: "EMAIL",
     country: "COUNTRY",
     password: "PASSWORD",
-    logIn: "I already have and account, log in",
+    logIn: "I already have an account, log in",
     submit: "Pre registration",
     terms: "I accept the general conditions of use",
   },

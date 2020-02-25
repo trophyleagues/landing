@@ -16,14 +16,30 @@ const SignUp = () => {
     forceUpdate()
   }, [lang])
 
+  function handleSubscription(evt) {
+    if(checkbox) {
+      evt.preventDefault()
+      let {name, email, country, password} = evt.target
+      let data = {
+        name: name.value,
+        email: email.value,
+        country: country.value,
+        password: password.value
+      }
+      console.log(data)
+    } else {
+      alert("Debes aprobar los términos y condiciones de uso")
+    }
+  }
+
   return(
     <div className="signup__container">
       <img src={sign} alt="Sign in!" />
-      <form className="">
-        <input type="text" placeholder={Form.name} /><br />
-        <input type="email" placeholder={Form.email} /><br />
-        <input type="text" placeholder={Form.country} /><br />
-        <input type="password" placeholder={Form.password} /><br />
+      <form onSubmit={(e) => handleSubscription(e)}>
+        <input type="text" placeholder={Form.name} name="name" /><br />
+        <input type="email" placeholder={Form.email} name="email" /><br />
+        <input type="text" placeholder={Form.country} name="country" /><br />
+        <input type="password" placeholder={Form.password} name="password" /><br />
         <input type="checkbox" /><label><Link to="/terms" target="_blank">{Form.terms}</Link></label><br />
         <button>{Form.submit}</button><br />
         <div className="signup__registered">

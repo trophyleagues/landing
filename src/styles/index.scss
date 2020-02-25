@@ -45,6 +45,14 @@ body {
             .signup__container {
                 text-align: center;
                 padding-top: 8%;
+                .socials_container {
+                    display: flex;
+                    justify-content: center;
+                    svg {
+                        font-size: 1.5rem;
+                        margin: 5px;
+                    }
+                }
                 input {
                     border: 0;
                     outline: 0;

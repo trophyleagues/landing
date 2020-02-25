@@ -4,6 +4,7 @@ import {useForceUpdate} from '../Hooks/useForceUpdate';
 import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faUser, faEnvelope, faFlag, faUserSecret} from '@fortawesome/free-solid-svg-icons';
+import {faFacebookSquare, faTwitter, faInstagram, faYoutube} from '@fortawesome/free-brands-svg-icons';
 import sign from '../assets/sign.gif';
 import axios from 'axios';
 import {FormLang} from '../langs/langs';
@@ -37,6 +38,12 @@ const SignUp = () => {
 
   return(
     <div className="signup__container">
+      <div className="socials_container">
+        <Link to="https://www.facebook.com/TrophyLeagues-2213341382217527" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} /></Link>
+        <Link to="https://twitter.com/TrophyLeagues" target="_blank"><FontAwesomeIcon icon={faTwitter} /></Link>
+        <Link to="https://www.instagram.com/trophyleagues/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></Link>
+        <Link to="https://www.youtube.com" target="_blank"><FontAwesomeIcon icon={faYoutube} /></Link>
+      </div>
       <img src={sign} alt="Sign in!" />
       <form onSubmit={(e) => handleSubscription(e)}>
         <FontAwesomeIcon icon={faUser} /><input type="text" placeholder={Form.name} name="name" /><br />

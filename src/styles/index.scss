@@ -318,6 +318,9 @@ body {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
+                    .signup_formPart {
+                        width: 100%;
+                    }
                 }
             }
         }

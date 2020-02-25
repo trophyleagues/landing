@@ -46,11 +46,11 @@ const SignUp = () => {
       </div>
       <img src={sign} alt="Sign in!" />
       <form onSubmit={(e) => handleSubscription(e)}>
-        <FontAwesomeIcon icon={faUser} /><input type="text" placeholder={Form.name} name="name" /><br />
-        <FontAwesomeIcon icon={faEnvelope} /><input type="email" placeholder={Form.email} name="email" /><br />
-        <FontAwesomeIcon icon={faFlag} /><input type="text" placeholder={Form.country} name="country" /><br />
-        <FontAwesomeIcon icon={faUserSecret} /><input type="password" placeholder={Form.password} name="password" /><br />
-        <div><input type="checkbox" value={checkbox} onClick={() => setCheckbox(!checkbox)}/><label><Link to="/terms" target="_blank">{Form.terms}</Link></label></div><br />
+        <div className="signup_formPart"><FontAwesomeIcon icon={faUser} /><input type="text" placeholder={Form.name} name="name" /></div>
+        <div className="signup_formPart"><FontAwesomeIcon icon={faEnvelope} /><input type="email" placeholder={Form.email} name="email" /></div>
+        <div className="signup_formPart"><FontAwesomeIcon icon={faFlag} /><input type="text" placeholder={Form.country} name="country" /></div>
+        <div className="signup_formPart"><FontAwesomeIcon icon={faUserSecret} /><input type="password" placeholder={Form.password} name="password" /></div>
+        <div className="signup_formPart"><input type="checkbox" value={checkbox} onClick={() => setCheckbox(!checkbox)}/><label><Link to="/terms" target="_blank">{Form.terms}</Link></label></div>
         <button>{Form.submit}</button><br />
         <div className="signup__registered">
           <a href="/login"><small>{Form.logIn}</small></a>

@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from 'react-redux';
 import Lightbox from 'react-image-lightbox';
-import {HomeLang} from '../langs/home';
+import {useForceUpdate} from '../Hooks/useForceUpdate';
+import {HomeLang} from '../langs/langs';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 import screen0 from '../assets/screens/home.jpg';
 import screen1 from '../assets/screens/alineacion.jpg';
@@ -14,6 +15,7 @@ import screen8 from '../assets/screens/training_individual.jpg';
 import kickstarter from '../assets/kikcstarter.png';
 
 const InfoBox = () => {
+  const forceUpdate = useForceUpdate()
   const lang = useSelector(state => state.front.lang)
   const [photoIndex, setPhotoIndex] = useState(0)
   const [lightboxOpen, setLightboxOpen] = useState(false)
@@ -28,9 +30,10 @@ const InfoBox = () => {
   }
 
   useEffect(() => {
-      Home.setLanguage(lang)
+    Home.setLanguage(lang)
+    forceUpdate()
   }, [lang])
-
+  
   return(
     <div className="infobox__container">
       {lightboxOpen && <Lightbox mainSrc={images[photoIndex]}
@@ -42,11 +45,11 @@ const InfoBox = () => {
           />}
       <h2 className="infobox__title">Trophy<span className="infobox__title--blue">Leagues</span></h2>
       <p className="infobox__description">
-          {Home.welcome}        
+          {Home.info}        
       </p>
       <div className="infobox__saleContainer">
         <div className="infobox__saleSubtitle">
-          Be the first with
+          {Home.callToAction}
         </div>
         <div className="infobox__saleTitle">
           <img src={kickstarter} alt="Start now" />

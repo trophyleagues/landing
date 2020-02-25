@@ -102,6 +102,8 @@ body {
                 margin: 0 5%;
                 text-align: center;
                 .infobox__title {
+                    letter-spacing: 0.1rem;
+                    font-weight: 500;
                     font-size: 2rem;
                     color: $white;
                     text-transform: uppercase;
@@ -118,6 +120,7 @@ body {
                         text-transform: uppercase;
                         .infobox__saleTitle--first {
                             font-size: 2rem;
+                            font-weight: 500;
                             color: $white;
                         }
                         .infobox__saleTitle--second {
@@ -125,15 +128,16 @@ body {
                         }
                     }
                     .infobox__saleSubtitle {
-                        font-family: Helvetica, sans-serif;
                         font-size: 1.25rem;
-                        font-weight: lighter;
+                        font-weight: 300 !important;
                         text-align: left;
-                        margin-left: 10%;
+                        text-transform: uppercase;
+                        margin-left: 15%;
+                        color: $light-blue;
                     }
                 }
                 .infobox__container {
-                    margin-top: 10px;
+                    margin-top: 20px;
                     display: flex;
                     flex-wrap: wrap;
                     width: 85%;

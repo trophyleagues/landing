@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
-import {FormattedMessage} from 'react-intl';
+import React, {useEffect, useState} from 'react';
+import {useSelector} from 'react-redux';
 import Lightbox from 'react-image-lightbox';
+import {HomeLang} from '../langs/home';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 import screen0 from '../assets/screens/home.jpg';
 import screen1 from '../assets/screens/alineacion.jpg';
@@ -13,8 +14,10 @@ import screen8 from '../assets/screens/training_individual.jpg';
 import kickstarter from '../assets/kikcstarter.png';
 
 const InfoBox = () => {
+  const lang = useSelector(state => state.front.lang)
   const [photoIndex, setPhotoIndex] = useState(0)
   const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [Home, setHomeLang] = useState(HomeLang);
   const images = [
     screen0, screen1, screen3, screen4, screen5, screen6, screen7, screen8
   ];
@@ -23,6 +26,10 @@ const InfoBox = () => {
     setPhotoIndex(index)
     setLightboxOpen(true)
   }
+
+  useEffect(() => {
+      Home.setLanguage(lang)
+  }, [lang])
 
   return(
     <div className="infobox__container">
@@ -35,10 +42,7 @@ const InfoBox = () => {
           />}
       <h2 className="infobox__title">Trophy<span className="infobox__title--blue">Leagues</span></h2>
       <p className="infobox__description">
-      <FormattedMessage id="welcome" >
-        The game combines the functions of technical direction of the team, training, economic management of the club, stadiums, aesthetics, leagues and a passionate community about soccer.
-        Trophy Manager is a massive free browser game in which players manage their own soccer club.
-      </FormattedMessage>
+          {Home.welcome}        
       </p>
       <div className="infobox__saleContainer">
         <div className="infobox__saleSubtitle">

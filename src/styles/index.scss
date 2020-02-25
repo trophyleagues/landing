@@ -15,9 +15,12 @@ body {
         .header__languaje {
             display: flex;
             padding: 10px;
-            img {
-                max-width: 40px;
-                padding: 5px;
+            .header__flag {
+                cursor: pointer;
+                img {
+                    max-width: 40px;
+                    padding: 5px;
+                }
             }
         }
         .header__nav {
